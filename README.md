@@ -86,9 +86,7 @@ Employee[name = Shashi, id = 1, salary = 70000.0]
 - Add a graphical user interface (GUI) for a better user experience.
 - Save employee data to a file or database for persistence.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
