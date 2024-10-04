@@ -28,7 +28,7 @@ abstract class Employee {
 class FullTimeEmployee extends Employee {
     private double monthlySalary;
 
-    public FullTimeEmployee(String name,int id, double monthlySalary) {
+    public FullTimeEmployee(String name, int id, double monthlySalary) {
         super(name, id);
         this.monthlySalary = monthlySalary;
     }
@@ -58,15 +58,20 @@ class PartTimeEmployee extends Employee {
 class PayRollSystem {
     public ArrayList<Employee> employeeList;
 
+    public PayRollSystem() {
+        employeeList = new ArrayList<>();
+    }
+
     public void addEmployee(Employee employee) {
         employeeList.add(employee);
     }
 
     public void removeEmployee(int empId) {
         Employee employeeToRemove = null;
-        for (Employee employee: employeeList) {
+        for (Employee employee : employeeList) {
             if (empId == employee.getId()) {
                 employeeToRemove = employee;
+                break;
             }
         }
 
@@ -74,8 +79,28 @@ class PayRollSystem {
             employeeList.remove(employeeToRemove);
         }
     }
+
+    public void displayEmployees() {
+        for (Employee employee : employeeList) {
+            System.out.println(employee);
+        }
+    }
+
 }
 
 public class Main {
+    public static void main(String[] args) {
+        PayRollSystem payRollSystem = new PayRollSystem();
+        FullTimeEmployee emp1 = new FullTimeEmployee("Shashi", 1, 70000.00);
+        PartTimeEmployee emp2 = new PartTimeEmployee("Alex", 2, 100, 40);
+        payRollSystem.addEmployee(emp1);
+        payRollSystem.addEmployee(emp2);
+        System.out.println("Initial Employee Details: ");
+        payRollSystem.displayEmployees();
+        System.out.println("Removing Employee....");
+        payRollSystem.removeEmployee(2);
+        System.out.println("Remaining Employees Details: ");
+        payRollSystem.displayEmployees();
+    }
 
 }
