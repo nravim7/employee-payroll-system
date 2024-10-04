@@ -1,8 +1,8 @@
-# Employee Management System
+# Employee Payroll System
+<img src="https://github.com/nravim7/employee-payroll-system/raw/master/Mar-Business_11.jpg" alt="Employee Payroll System" width="500"/>
 
 ## Overview
-
-This **Employee Management System** is a Java-based project designed to handle the management of employees in an organization. The system allows you to manage both full-time and part-time employees by adding, removing, and displaying their details. Each employee's salary is calculated based on their employment type, with full-time employees receiving a fixed monthly salary and part-time employees being paid based on the number of hours worked.
+The Employee Payroll System is a simple Java application that demonstrates how to manage employees and calculate their salaries. It supports both Full-Time and Part-Time employees, allowing for different methods of salary computation. The system allows for the addition and removal of employees, as well as displaying employee details, including their calculated salary.
 
 ## Features
 
