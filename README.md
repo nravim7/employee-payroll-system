@@ -50,7 +50,7 @@ Manages a list of employees and allows you to:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/employee-management-system.git
+   git clone https://github.com/nravim7/employee-management-system.git
    ```
    
 2. Navigate to the project directory:
